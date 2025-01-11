@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dcdcec;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.add-task-button {
+  background-color: bisque;
+  /* color: white; */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5%;
+  /* flex-grow: 1; */
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.task-column {
+  background-color: #f8f8fc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 200px;
+  /* max-width: 250px; */
+}
+
+.task-column-bg {
+  height: 60%;
+  border-radius: 5px;
+}
+
+.task-column h2 {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.task-column .tasks-div {
+  margin-top: 70px;
+}
+
+.task-card {
+  background-color: #f8f8fc;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.task-header {
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-header h4 {
+  display: inline;
+}
+
+.task-header span {
+  padding: 2%;
+}
+
+.options-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.options-menu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #f8f8fc;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.options-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.options-menu button:hover {
+  background: #f0f0f0;
+}
+
+.options-menu.show {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.logindiv,
+.signupdiv {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:15%;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(255, 255, 255, 0.8); */
+  /* box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.8); */
+  /* border-radius: 5%; */
+}
+.logindiv button,
+.signupdiv button {
+  width: 80px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.logindiv input,
+.signupdiv input {
+  width: 60%;
+  height: 25px;
+  font-size: 15px;
+  font-weight: 550;
+  padding: 10px; 
+  margin: 10px; 
+}
+
+.logindiv div,
+.signupdiv div {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.logindiv a,
+.signupdiv a {
+  color: black;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+
+.name{
+  font-size: 30px;
+  flex-grow: 1;
+}
+
+.logout{
+  background-color: bisque;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5%;
+  /* flex-grow: 1; */
+}
